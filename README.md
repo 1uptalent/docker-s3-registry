@@ -3,6 +3,10 @@ docker-s3-registry
 
 An S3 based docker registry image, configurable via environment variables
 
+## Building
+    docker build -t 1uptalent/registry .
+or
+    docker build -t 1uptalent/registry git://github.com/1uptalent/docker-s3-registry
 ## Running
     docker run -d -e SETTINGS_FLAVOR=prod \
                   -e AWS_ACCESS_KEY_ID=__your_id__ \
