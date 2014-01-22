@@ -1,0 +1,20 @@
+# The `common' part is automatically included (and possibly overriden by all
+# other flavors)
+common:
+    # Bucket for storage
+    boto_bucket: REPLACEME
+
+    # Amazon S3 Storage Configuration
+    s3_access_key: REPLACEME
+    s3_secret_key: REPLACEME
+    s3_bucket: REPLACEME
+    s3_encrypt: REPLACEME
+    s3_secure: REPLACEME
+
+    # Set a random string here
+    secret_key: REPLACEME
+
+
+prod:
+    storage: s3
+    storage_path: /prod
